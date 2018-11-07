@@ -29,7 +29,7 @@ def get_bdboxes( boxes_labels ):
             if box_labels[i][4] > max:
                 max = box_labels[i][4]
                 index = i
-
+            # what it do? what is the "index" do? or "if"?
             # if box_labels[i][4] >= 0.1:
             x = box_labels[i][0]
             y = box_labels[i][1]
@@ -42,6 +42,7 @@ def get_bdboxes( boxes_labels ):
             bdboxes.append( bdbox )
 
     return bdboxes
+    # return all the bdboxes? and show all the bdboxes in the end?
 
 def get_object_class( input ):
     max = 0
